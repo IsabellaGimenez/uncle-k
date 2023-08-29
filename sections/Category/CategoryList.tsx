@@ -115,7 +115,7 @@ function CategoryList(props: Props) {
                 (
                   <figure>
                     <Image
-                      class="card w-full"
+                      class="w-full"
                       src={image}
                       alt={description || label || tag}
                       width={160}
