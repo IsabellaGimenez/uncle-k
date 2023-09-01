@@ -43,6 +43,7 @@ export async function loader(
     `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
 
   const { data } = (await fetch(url).then((r) => r.json()).catch((err) => {
+    console.log (err.message);
     console.error("error fetching posts from instagram", err);
     return { data: [] };
   })) as {

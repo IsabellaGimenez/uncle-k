@@ -22,7 +22,7 @@ function NavItem({ item }: { item: INavItem }) {
       {children && children.length > 0 &&
         (
           <div
-            class="fixed hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 border-t border-b-2 border-base-200 w-screen"
+            class="fixed hidden hover:flex group-hover:flex bg-base-100  z-50 items-start justify-center gap-6 border-t border-b-2 border-base-200 w-screen"
             style={{ top: "0px", left: "0px", marginTop: headerHeight }}
           >
             {image?.src && (
@@ -37,7 +37,7 @@ function NavItem({ item }: { item: INavItem }) {
             )}
             <ul class="flex items-start justify-center gap-6">
               {children.map((node) => (
-                <li class="p-6">
+                <li class="p-0 ">
                   <a class="hover:underline" href={node.href}>
                     <span>{node.label}</span>
                   </a>
@@ -46,7 +46,7 @@ function NavItem({ item }: { item: INavItem }) {
                     {node.children?.map((leaf) => (
                       <li>
                         <a class="hover:underline" href={leaf.href}>
-                          <span class="text-xs">{leaf.label}</span>
+                          <span class="text-xm">{leaf.label}</span>
                         </a>
                       </li>
                     ))}
