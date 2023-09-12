@@ -77,7 +77,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           alt={alt}
         />
       </Picture>
-      </a>
+    </a>
   );
 }
 
