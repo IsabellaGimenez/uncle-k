@@ -8822,11 +8822,16 @@
         "iframe": {
           "type": "string",
           "title": "Iframe"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
         }
       },
       "required": [
         "title",
-        "iframe"
+        "iframe",
+        "url"
       ],
       "title": "deco-sites/uncle-k/sections/Category/categorymap.tsx@html"
     },

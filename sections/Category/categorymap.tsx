@@ -1,7 +1,6 @@
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 
-
 /** @title {{{title}}} - {{{href}}} */
 export interface Link {
   title: string;
@@ -11,18 +10,17 @@ export interface Link {
 export interface html {
   title: string;
   iframe: string;
-  url:string;
+  url: string;
 }
 
 export default function mapa({
   title,
   iframe,
   url,
-}:html) {
+}: html) {
   return (
-    <div> 
+    <div>
       <>
-      
       </>
     </div>
   );

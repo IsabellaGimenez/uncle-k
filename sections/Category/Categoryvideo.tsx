@@ -1,5 +1,5 @@
-import type { Image as DecoImage} from "deco-sites/std/components/types.ts";
-import type { Video as decoideo} from "deco-sites/std/components/types.ts";
+import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
+import type { Video as decoideo } from "deco-sites/std/components/types.ts";
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 
@@ -16,7 +16,6 @@ export interface Props {
   picture?: DecoImage;
   introduction: HTML;
   links?: Array<Link>;
- 
 }
 
 export default function Intro({
@@ -24,7 +23,7 @@ export default function Intro({
   picture,
   introduction,
   links,
- }: Props) {
+}: Props) {
   return (
     <header class="pt-20 pb-32 flex justify-center items-center">
       <div class="flex flex-col gap-2 text-3xl">
@@ -34,24 +33,22 @@ export default function Intro({
           src={picture}
           alt={headline}
         />
-       
+
         <HTMLRenderer html={introduction} />
         {!!links?.length && (
           <ul>
             {links.map(({ href, title }) => (
               <a href={href} aria-label={title}>
-                <li>{title}</li>              
-              </a>                                 
-            ))}   
-            <video 
-          class="object-cover w-screen"
-          src="url" 
-          alt={headline}
-        ></video>                                
-
-          </ul>  
-           
-          
+                <li>{title}</li>
+              </a>
+            ))}
+            <video
+              class="object-cover w-screen"
+              src="url"
+              alt={headline}
+            >
+            </video>
+          </ul>
         )}
       </div>
     </header>
